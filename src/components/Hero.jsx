@@ -7,7 +7,6 @@ const Hero = () => {
       className="min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 flex flex-col md:flex-row items-center justify-center px-6 py-20 gap-10 text-center md:text-left"
       id="home"
     >
-      {/* Left - Profile Image */}
       <div
         className="w-44 h-44 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-600 shadow-2xl transform hover:scale-105 transition duration-300"
         data-aos="zoom-in"
@@ -19,7 +18,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* Right - Text */}
       <div data-aos="fade-up">
         <h1 className="text-4xl md:text-6xl font-extrabold text-blue-600 mb-4 leading-tight">
           Simhadri Yerralaleppagari
@@ -41,7 +39,8 @@ const Hero = () => {
         />
 
         <p className="max-w-lg text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-          Passionate about transforming ideas into responsive web experiences through full stack development. <br />
+          Passionate about transforming ideas into responsive web experiences through full stack development.
+          <br />
           I love coding, learning new technologies, and solving real-world problems with innovative solutions.
         </p>
 
@@ -51,8 +50,9 @@ const Hero = () => {
 
         <div className="mt-6">
           <a
-            href="#"
-            onClick={() => window.open("/Simhadri_Resume.pdf", "_blank")}
+            href="/Simhadri_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md shadow-lg transition duration-300"
           >
             View Resume
